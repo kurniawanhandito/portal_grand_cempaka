@@ -1,0 +1,256 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 2, 2013, 2:38:41 PM
+    Author     : HANDITO
+*/
+@font-face{
+    font-family: Gothic;
+    src: 
+        url('../font/gothic.eot?') format('eot'),
+        url('../font/gothic.svg') format('svg'),
+        url('../font/gothic.ttf') format('truetype'),
+        url('../font/gothic.woff') format('woff');
+}
+body{
+    margin: 0 auto;
+    padding: 0px;
+}
+.header{
+
+}
+.header_top{
+    height: 10px;
+    width: auto;
+    background: #FDC909;
+    position: relative;
+}
+.header_logo{
+    height: 105px;
+    width: auto;
+    background: url('../img/back_navigation.jpg') repeat-x;
+    text-align: center;
+}
+.header_logo > img{
+    position: relative;
+    z-index: 0;
+    top: -70px;
+}
+.back_nav{
+    height: 45px;
+    text-align: center;
+    margin-bottom: -45px;
+    background: url("../img/under_logo.png") no-repeat center;
+    position: relative;
+} 
+.navigation{
+    height: 45px;
+    width: auto;
+    background: url("../img/back_nav.jpg") repeat-x;
+}
+.nav_ul{
+    margin: 0 auto;
+    padding: 0px;
+    height: 45px;
+}
+.nav_ul > li{
+    list-style: none;    
+    margin: 0px !important;
+}
+.nav_ul > li:last-child{
+    border-right: none;
+}
+.nav_ul > li > a{
+    margin: 0px;
+    display: block;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #937726;
+    position: relative;
+    z-index: 2;
+    font-family: Gothic;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.nav_ul > li > a:hover{
+    -webkit-box-shadow: inset 0px 0px 10px 0px #705510;
+    box-shadow: inset 0px 0px 10px 0px #705510;
+}
+.nav_ul > li:hover > ul{
+    visibility: visible;
+}
+.sub_nav_ul{
+    visibility: hidden;
+    position: absolute;
+    z-index: 5;
+    padding: 0px;
+    margin: 0 auto;
+    background: -moz-linear-gradient(top,  rgba(253,201,6,0.45) 0%, rgba(253,201,6,0.45) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(253,201,6,0.45)), color-stop(100%,rgba(253,201,6,0.45))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(253,201,6,0.45) 0%,rgba(253,201,6,0.45) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(253,201,6,0.45) 0%,rgba(253,201,6,0.45) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(253,201,6,0.45) 0%,rgba(253,201,6,0.45) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(253,201,6,0.45) 0%,rgba(253,201,6,0.45) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73fdc906', endColorstr='#73fdc906',GradientType=0 ); /* IE6-9 */
+}
+.sub_nav_ul > li {
+    list-style: none;
+    float: none;
+}
+.sub_nav_ul > li > a{
+    color: #937726;
+    font-family: Gothic;
+    font-size: 0.9em;
+    font-weight: normal;
+    width: 190px;
+    float: left;
+    padding: 5px;
+    text-decoration: none;
+    background: #fffefd; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fffefd 0%, #fff2c0 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fffefd), color-stop(100%,#fff2c0)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fffefd 0%,#fff2c0 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fffefd 0%,#fff2c0 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fffefd 0%,#fff2c0 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fffefd 0%,#fff2c0 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffefd', endColorstr='#fff2c0',GradientType=0 ); /* IE6-9 */
+    border: 1px solid #DDAE01;
+    margin-bottom: 2px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.sub_nav_ul > li > a:hover{
+    background: #fff2c0; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fff2c0 0%, #fffefd 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff2c0), color-stop(100%,#fffefd)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fff2c0 0%,#fffefd 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fff2c0 0%,#fffefd 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fff2c0 0%,#fffefd 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fff2c0 0%,#fffefd 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff2c0', endColorstr='#fffefd',GradientType=0 ); /* IE6-9 */
+}
+.sub_nav_ul > li > a > img{
+    border: none;
+    margin: 0px 5px;
+    position: relative;
+}
+.content{
+    height: 470px;
+    width: auto;
+    background: url('../img/loader.gif') #F8F2DF;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+}
+.slide_wrapper{
+    background: url('../img/loader.gif') #FFFFFF;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+}
+#slides {
+    display: none;
+    height: 470px !important;
+}
+#slides .slidesjs-navigation {
+    margin-top:3px;
+}
+#slides .slidesjs-previous {
+    background: url('../img/slider/ico_left.png') no-repeat;
+    position: relative;
+    margin-right: 5px;
+    float: left;
+    padding: 20px;
+    z-index: 11;
+    top: -235px;
+    left: 10px;
+}
+#slides .slidesjs-next {
+    background: url('../img/slider/ico_right.png') no-repeat;
+    position: relative;
+    margin-right: 5px;
+    float: left;
+    padding: 20px;
+    z-index: 11;
+    top: -235px;
+    left: 875px;
+}
+.slidesjs-pagination {
+    margin: 6px 0 0;
+    list-style: none;
+    position: relative;
+    z-index: 10;
+    top: -35px;
+    left: 310px;
+    text-align: center;
+    display: inline-block;
+}
+.slidesjs-pagination li {
+    float: left;
+    margin: 0 1px;
+}
+.slidesjs-pagination li a {
+    display: block;
+    width: 13px;
+    height: 0;
+    padding-top: 13px;
+    background-image: url('../img/slider/pagination.png');
+    background-position: 0 0;
+    float: left;
+    overflow: hidden;
+}
+.slidesjs-control, .slidesjs-container{
+    height: 470px !important;
+}
+.slidesjs-control > img{
+    height: 470px !important;
+}
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+    background-position: 0 -13px
+}
+.slidesjs-pagination li a:hover {
+    background-position: 0 -26px
+}
+#slides a:link,
+#slides a:visited {
+    color: #333
+}
+#slides a:hover,
+#slides a:active {
+    color: #9e2020
+}
+.navbar {
+    overflow: hidden
+}
+.footer{
+    height: 35px;
+    background: #CFA92A;
+    margin-bottom: 0px;
+}
+.copyright{
+    height: 35px;
+    line-height: 35px;
+    font-family: arial;
+    font-size: 0.7em;
+    color: #59470E;
+}
+.copyright > a{
+    position: relative;
+}
+.copyright > a > img{
+    border: none;
+}
